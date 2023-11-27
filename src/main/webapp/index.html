@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert Book</title>
+<style>
+	form{
+		max-width: 500px;
+		margin:3em auto;
+	}
+	input{
+		width: 100%;
+		display: block;
+		margin:10px 0;
+		padding: 8px;
+	}
+	input[type="submit"]{
+		width: 104%;
+		padding: 10px;
+		color: white;
+		background-color: black;
+		border-radius: 8px;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	.nav-container{
+		margin:2em;
+	}
+	nav{
+		display: flex;
+		flex-direction:row;
+		justify-content: end;
+		width: 100%;
+		gap:2em;
+	}
+	nav a{
+		text-decoration: none;
+		font-size: 1.1em;
+		border: 2px solid black;
+		border-radius: 6px;
+		padding: 8px 12px;
+		color: black;
+	}
+</style>
+</head>
+<body>
+	<div class="nav-container">
+		<nav>
+			<a href="index.html">Insert Book</a>
+			<a href="displayAll">Display All Books</a>
+			<a href="displayOne.html">Search Book</a>
+		</nav>
+	</div>
+	<form method="post" action="ServletLibrary">
+		Title: <input type="text" id="Title" name="Title" required>
+		Author: <input type="text" id="Author" name="Author" required>
+		Publisher: <input type="text" id="Publisher" name="Publisher" required>
+		Edition: <input type="text" id="Edition" name="Edition" required>
+		Price: <input type="number" id="Price" name="Price" required>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Book</title>
+</head>
+<style>
+	.nav-container{
+		margin:2em;
+	}
+	nav{
+		display: flex;
+		flex-direction:row;
+		justify-content: end;
+		width: 100%;
+		gap:2em;
+	}
+	nav a{
+		text-decoration: none;
+		font-size: 1.1em;
+		border: 2px solid black;
+		border-radius: 6px;
+		padding: 8px 12px;
+		color: black;
+	}
+	form{
+		max-width:800px;
+		margin:4em auto;
+		display: grid;
+		grid-template-columns: 80% 20%;
+		gap:2em;
+	}
+	input[type="text"]{
+		font-size: 1.2em;
+		padding: 12px;
+		border-radius: 6px;
+	}
+	input[type="submit"]{
+		font-size: 1.2em;
+		padding: 12px;
+		border-radius: 6px;
+		background-color: black;
+		color: white;
+	}
+</style>
+<body>
+	<div class="nav-container">
+		<nav>
+			<a href="index.html">Insert Book</a>
+			<a href="displayAll">Display All Books</a>
+			<a href="displayOne.html">Search Book</a>
+		</nav>
+	</div>
+	<form action="displayOne">
+		<input type="text" name="Title" id="Title" placeholder="Search book here...">
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>
